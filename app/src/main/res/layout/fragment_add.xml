@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новый билет"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номер билета"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Текст вопроса"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/etAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ответ 1"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ответ 2"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ответ 3"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ответ 4"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Номер правильного ответа:" />
+
+        <Spinner
+            android:id="@+id/spCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cbPassed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Билет решён" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Сохранить" />
+    </LinearLayout>
+</ScrollView>
